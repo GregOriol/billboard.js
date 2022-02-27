@@ -173,7 +173,7 @@ export default {
 
 			if (isUndefined(text)) {
 				const title = (state.hasAxis || state.hasRadar) &&
-					sanitise(titleFormat ? titleFormat(row.x) : row.x);
+					sanitise(titleFormat ? titleFormat(row.x, row.index) : row.x);
 
 				text = tplProcess(tpl[0], {
 					CLASS_TOOLTIP: $TOOLTIP.tooltip,
