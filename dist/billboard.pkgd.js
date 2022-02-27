@@ -24019,7 +24019,7 @@ var Store = /*#__PURE__*/function () {
    *      doNotHide: true,
    *      grouped: false,
    *      format: {
-   *          title: function(x) { return "Data " + x; },
+   *          title: function(x, index) { return "Data " + x; },
    *          name: function(name, ratio, id, index) { return name; },
    *          value: function(value, ratio, id, index) { return ratio; }
    *      },
